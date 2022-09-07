@@ -52,4 +52,4 @@ app.use(async (req, res, next) => {
 app.use("/income", incomeRouter);
 app.use("/expense", expenseRouter);
 
-app.listen(process.env.PORT || 3001);
+app.listen(process.env.PORT || 5000);
