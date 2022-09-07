@@ -14,7 +14,7 @@ mongo.connect();
 
 app.use((req, res, next) => {
   console.log(req?.method);
-  let allowedOrigin = ["https://6318d5168738d300c353249b--sparkling-pika-f11577.netlify.app"];
+  let allowedOrigin = ["https://6318dd807e6c05006f3ada29--sparkling-pika-f11577.netlify.app/"];
   if (allowedOrigin.indexOf(req.headers.origin) != -1) {
     res.header("Access-Control-Allow-Origin", req.headers.origin);
     res.setHeader("Access-Control-Allow-Credentials", true);
