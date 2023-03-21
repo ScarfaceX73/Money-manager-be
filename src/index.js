@@ -14,7 +14,7 @@ mongo.connect();
 
 app.use((req, res, next) => {
   console.log(req?.method);
-  let allowedOrigin = ["http://localhost:3000", "https://prismatic-sunflower-f951cc.netlify.app"];
+  let allowedOrigin = ["*"];
   if (allowedOrigin.indexOf(req.headers.origin) != -1) {
     res.header("Access-Control-Allow-Origin", req.headers.origin);
     res.setHeader("Access-Control-Allow-Credentials", true);
